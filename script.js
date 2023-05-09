@@ -4,13 +4,17 @@
  * Declare a variable called myFavoriteSong on one line and console.log the value
  * Then, using your Literals, console.log "my favorite song is..." with the song's value
  */
+const myFavoriteSong = "Mary had a Little Lamb"
+console.log(`my favorite song is ${myFavoriteSong}`)
 
 /*
  * Prompt 2:
  *
  * Declare 3 variables using each of let, const, and var, then console.log each of them
  */
-
+const myName = "Ethan"
+let myAge = 24
+var location = "IL"
 /*
  * Prompt 3:
  *
@@ -21,9 +25,14 @@
  *   - divide your variable by 7
  *   - calculate the remainder of dividing your variable by 2
  */
-
+const number = 10
+console.log(number + 1)
+console.log(number - 1)
+console.log(number * 3)
+console.log(number / 7)
+console.log(number % 2)
 /*
- * Prompt 4:
+ * Prompt 4:node script.js 
  *
  * Create a variable called firstName and assign it to a string of your first
  * name. Create a variable called lastName and assign it to a string of your
@@ -33,7 +42,10 @@
  * and lastName variables.
  * Run a console.log that says 'hello my name is..." with your fullName. 
  */
-
+const firstName = "Ethan"
+const lastName = "Flatt"
+const fullName = (firstName + " " + lastName)
+console.log(`hello my name ${fullName}`)
 
 /* Arrays */
 
@@ -54,7 +66,9 @@ let array3 = [
   ['Marty Feldman', ['Marty Marion']],
   ['Marty Stuart', ['Marty Janetty', ['Marty McFly'], 'Marty Robbins']]
 ];
-
+console.log(array1[2])
+console.log(array2[1][1])
+console.log(array3[1][1][1][0])
 /*
  * Prompt 2:
  *
@@ -62,7 +76,7 @@ let array3 = [
  */
 
 let array4 = ['a', 'b', 'c', 'd', 'e'];
-
+console.log(array4[array4.length - 2])
 /*
  * Prompt 3:
  *
@@ -83,3 +97,17 @@ let cathleen = ['Cathleen', 186, 'New York'];
 // Change Cathleen's hometown from New York to "Gotham City".
 
 // Remove "Pittsburgh" from Kristyn's array and add "Oakland".
+
+thom.shift()
+thom.unshift("Tom")
+console.log(thom)
+
+karolin[1]++
+console.log(karolin)
+
+cathleen[2] = "Gotham City"
+console.log(cathleen)
+
+kristyn.pop()
+kristyn.push("Oakland")
+console.log(kristyn)
